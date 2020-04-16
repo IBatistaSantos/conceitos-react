@@ -20,7 +20,7 @@ function App() {
         'node', 'react', 'react native'
       ]
     })
-    setRepositories(...repositories, response.data)
+    setRepositories([...repositories, response.data])
   }
 
   async function handleRemoveRepository(id) {
